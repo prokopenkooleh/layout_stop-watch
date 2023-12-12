@@ -1,0 +1,75 @@
+.page__body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+.page__position {
+  position: relative;
+}
+
+.watch {
+  background: url("num.0bd7f876.jpg") center / cover no-repeat;
+  border: 10px double #daa520;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+}
+
+.watch__center {
+  z-index: 1;
+  background-color: #dd8a0e;
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.watch__minutes {
+  transform-origin: bottom;
+  background-color: #774a06;
+  border-radius: 60% 60% 0% 0%;
+  width: 10px;
+  height: 45%;
+  animation: 5s linear infinite minutes;
+  position: absolute;
+  bottom: 50%;
+}
+
+.watch__hours {
+  transform-origin: 0;
+  background-color: #3f2a0b;
+  border-radius: 60% 60% 0% 0%;
+  width: 35%;
+  height: 10px;
+  animation: 60s linear infinite hours;
+  position: absolute;
+  left: 50%;
+}
+
+@keyframes minutes {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hours {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
